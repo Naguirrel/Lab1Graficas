@@ -3,6 +3,7 @@ mod line;
 mod p1;
 mod p2;
 mod p3;
+mod p45;
 
 use image::{Rgb, RgbImage};
 
@@ -15,6 +16,7 @@ fn main() {
     p1::draw(&mut img);
     p2::draw(&mut img);
     p3::draw(&mut img);
+    p45::draw(&mut img);
 
     img.save("out.png").expect("failed to save image");
     img.save("out.bmp").expect("failed to save image");
