@@ -1,6 +1,7 @@
 mod fill;
 mod line;
 mod p1;
+mod p2;
 
 use image::{Rgb, RgbImage};
 
@@ -11,6 +12,7 @@ fn main() {
     let mut img = RgbImage::from_pixel(WIDTH, HEIGHT, Rgb([0, 0, 0]));
 
     p1::draw(&mut img);
+    p2::draw(&mut img);
 
     img.save("out.png").expect("failed to save image");
     img.save("out.bmp").expect("failed to save image");
