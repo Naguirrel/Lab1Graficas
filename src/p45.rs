@@ -33,8 +33,8 @@ fn hole_points() -> Vec<(i32, i32)> {
 }
 
 pub fn draw(img: &mut RgbImage) {
-    let fill_color = Rgb([0, 255, 0]);
-    let border_color = Rgb([255, 255, 255]);
+    let fill_color = Rgb([80, 220, 120]);
+    let border_color = fill_color;
 
     let polygon = points();
     let hole = hole_points();

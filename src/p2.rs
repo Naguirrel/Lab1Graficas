@@ -13,8 +13,8 @@ pub fn points() -> Vec<(i32, i32)> {
 }
 
 pub fn draw(img: &mut RgbImage) {
-    let fill_color = Rgb([0, 0, 255]);
-    let border_color = Rgb([255, 255, 255]);
+    let fill_color = Rgb([0, 180, 255]);
+    let border_color = fill_color;
 
     let polygon = points();
     scanline_fill(img, &polygon, fill_color, &[]);
